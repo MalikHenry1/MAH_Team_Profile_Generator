@@ -1,44 +1,11 @@
-const Manager = require('../lib/Manager');
+const Engineer = require('../lib/Engineer');
 
-describe("Manager", () => {
+describe("Engineer", () => {
     describe("Initialization", () => {
         it("should set github via constructor arguments", () => {
-            // Arrange
             const github = 'MalikHenry1'
-            const manager = new Manager("Alice", 1, "test@test.com", officeNumber);
-            // Act
-
-            // Assert
-            expect(manager.officeNumber).toBe(officeNumber);
-        });
-
-        it("should set name via constructor arguments", () => {
-            // arrange
-            const name = "Alice"
-
-            // act
-            const manager = new Manager(name)
-
-            // assert
-            expect(manager.name).toBe(name)
-
-
-        });
-
-        it("should set id via constructor arguments", () => {
-            const id = 100;
-
-            const employee = new Employee("Alice", id);
-
-            expect(employee.id).toBe(id);
-        });
-
-        it("should set email via constructor arguments", () => {
-            const email = "test@test.com";
-
-            const employee = new Employee("Alice", 100, email);
-
-            expect(employee.email).toBe(email);
+            const engineer = new Engineer("Alice", 1, "test@test.com", github);
+            expect(engineer.github).toBe(github);
         });
     });
 
@@ -51,12 +18,11 @@ describe("Manager", () => {
             expect(engineerGitHub).toBe(github);
 
         });
-        it("should get name via getID()", () => {
-            const id = 10;
-            const employee = new Employee('name', id, "test@test.com");
-            const employeeID = employee.getID();
-
-            expect(employeeID).toBe(id);
+        it("should get name via getRole()", () => {
+            const role = "Engineer";
+            const engineer = new Engineer('name', 10, "test@test.com");
+            const engineerRole = engineer.getRole();
+            expect(engineerRole).toBe(role);
 
         });
     });
