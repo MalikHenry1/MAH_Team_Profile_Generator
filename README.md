@@ -47,6 +47,8 @@
   
   Email: mhenry30658@gmail.com
     
+    Part 1 Video link: https://watch.screencastify.com/v/aGHgsGWVmjNamAALOu5b
+    Part 2 Video link: https://watch.screencastify.com/v/MSEgrmiWMcv3EIxXda01
     
 
 
